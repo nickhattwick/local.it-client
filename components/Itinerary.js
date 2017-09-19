@@ -12,7 +12,7 @@ export default class Itinerary extends Component {
 
   getInitialData () {
     let user = this.props.screenProps.fbID;
-    axios.get('http://localhost:3000/api/' + user, { method: 'GET' })
+    axios.get('http://ec2-52-24-215-213.us-west-2.compute.amazonaws.com:3000/api/' + user, { method: 'GET' })
       .then((data) => {
         this.setState({
           itineraryData: data.data.itineraryByCity

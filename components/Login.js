@@ -60,7 +60,7 @@ export default class Login extends Component {
   };
 
   // handle Login with Facebook button tap
-  loginWithFacebook = () => this.openURL('http://localhost:3000/auth/facebook');
+  loginWithFacebook = () => this.openURL('http://ec2-52-24-215-213.us-west-2.compute.amazonaws.com:3000/auth/facebook');
 
   // open URL in a browser
   openURL = (url) => {

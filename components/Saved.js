@@ -23,7 +23,7 @@ export default class Saved extends Component {
 
   getInitialData () {
     let user = this.props.screenProps.fbID;
-    axios.get('http://localhost:3000/api/' + user, { method: 'GET' })
+    axios.get('http://ec2-52-24-215-213.us-west-2.compute.amazonaws.com:3000/api/' + user, { method: 'GET' })
       .then((data) => {
         this.setState({
           user: data.data
@@ -33,7 +33,7 @@ export default class Saved extends Component {
 
   getInterestsByCity (city) {
   let user = this.props.screenProps.fbID;
-  axios.get('http://localhost:3000/api/' + user, { method: 'GET' })
+  axios.get('http://ec2-52-24-215-213.us-west-2.compute.amazonaws.com:3000/api/' + user, { method: 'GET' })
     .then((data) => {
       let savedInterest = data.data.interestsByCity.filter(element => {
         if (element.city === city) {

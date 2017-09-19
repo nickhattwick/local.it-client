@@ -16,7 +16,7 @@ export default class Profile extends Component {
 
   // emit a logout event
   logout () {
-    fetch('http://localhost:3000/logout')
+    fetch('http://ec2-52-24-215-213.us-west-2.compute.amazonaws.com:3000/logout')
       .then(() => { DeviceEventEmitter.emit('logout'); })
       .catch(console.log);
   }

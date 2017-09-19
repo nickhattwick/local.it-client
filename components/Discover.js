@@ -41,7 +41,7 @@ export default class Discover extends Component {
   //Yelp Fetch that goes through Python
   fetchYelpData (title) {
     console.log('about to fetch');
-    fetch('http://localhost:3000/api/yelp', {
+    fetch('http://ec2-52-24-215-213.us-west-2.compute.amazonaws.com:3000/api/yelp', {
           method: 'POST',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({

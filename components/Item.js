@@ -45,7 +45,7 @@ export default class Item extends Component {
 
   handleNope (card) {
     var userId = this.props.userData.fbID;
-    fetch('http://localhost:3000/api/' + userId, {
+    fetch('http://ec2-52-24-215-213.us-west-2.compute.amazonaws.com:3000/api/' + userId, {
       method: 'PUT',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
