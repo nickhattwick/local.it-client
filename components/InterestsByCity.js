@@ -48,6 +48,7 @@ export default class InterestByCity extends Component {
     let userId = this.props.screenProps.fbID;
     let input = this.state.text;
     let savedInterests = this.state.savedInterests;
+
     fetch('http://ec2-52-24-215-213.us-west-2.compute.amazonaws.com:3000/api/interests/' + userId, {
       method: 'PUT',
       headers: {'Content-Type': 'application/json'},

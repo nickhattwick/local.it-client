@@ -31,13 +31,8 @@ export default class Discover extends Component {
 
   //Yelp Fetch that goes through Python
   fetchYelpData (title) {
-<<<<<<< 6f017cb1c15cd0320dd4ef78b48bea6d7a165d74
     console.log('about to fetch');
     fetch('http://ec2-52-24-215-213.us-west-2.compute.amazonaws.com:3000/api/yelp', {
-=======
-    // console.log('about to fetch');
-    fetch('http://localhost:3000/api/yelp', {
->>>>>>> Add geolocation to Redux store
           method: 'POST',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
