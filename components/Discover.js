@@ -50,8 +50,9 @@ export default class Discover extends Component {
       this.props.navigation.navigate('CategoryView', {
         data: filtered,
         category: title
-      });
-    });
+      })
+    })
+    .catch(err => console.log)
   }
 
   render () {
@@ -82,11 +83,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     padding: 25,
-    borderWidth: 0.5,
-    borderColor: '#d6d7da',
-    backgroundColor: '#fff'
+    borderTopWidth: 0.5,
+    borderColor: '#369E60',
+    backgroundColor: '#EFFFFE'
   },
   categoryText: {
-    color: '#596a7f',
+    color: '#161B2D',
   }
 })
